@@ -43,6 +43,8 @@ def AnalyzeFirefox():
     driver = webdriver.Firefox(options=options)
     driver.get("http://127.0.0.1:5500/index.html")
     driver.maximize_window()
+    #some time given to run function CheckForGC() on console
+    time.sleep(10)
 
     # Switch to the new window and open new URL
     driver.execute_script("""window.open('');""")
@@ -57,7 +59,7 @@ def AnalyzeFirefox():
     time.sleep(2)
     pyautogui.hotkey('enter')
     time.sleep(2)
-    # My path is C:\Users\Alaric Tang\Documents\Downloads
+    # Example: C:\Users\<user>\Documents\Downloads
     path = input("Where is the path to your downloads?: ")
     performancePath = path + "\\Performance.html"
     with open(performancePath, "r") as f:
