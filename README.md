@@ -12,7 +12,7 @@ By viewing the heapsize used by the website at 3 given times, before testing, af
 <h1>Steps to get the project running</h1>
 
 1. To get the python script running make sure you install the correct version of web drivers. The web drivers that are used are chromedriver, geckodriver, and        msedgedriver. For chromedriver, make sure the version is compatible with your Google Chrome version. In order to find the compatible version of the drivers, go to:
-  https://chromedriver.chromium.org/downloads </br>
+  </br>https://chromedriver.chromium.org/downloads </br>
   https://github.com/mozilla/geckodriver/releases </br>
   https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/ </br>
 2. Unzip the web drivers
