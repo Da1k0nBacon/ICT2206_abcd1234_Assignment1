@@ -29,8 +29,8 @@ By viewing the heapsize used by the website at 3 given times, before testing, af
 ![image](https://user-images.githubusercontent.com/73848081/161986741-99e1d950-37d0-41f9-8bf4-0a3902d63f89.png)
 
 <h2>Notes</h2>
-- Mozilla Firefox analyzer will only show the Heap size used by the testing website and not the number of image nodes to see if they were garbage collected
-- In order to see number of nodes in Firefox, call the function CheckForGC() in the console</br>
+- Mozilla Firefox analyzer will only show the Heap size used by the testing website and not the number of image nodes to see if they were garbage collected </br>
+- In order to see number of nodes in Firefox, call the function CheckForGC() in the console </br>
 
 ![image](https://user-images.githubusercontent.com/73848081/161986532-4691b0d4-10af-4d86-a056-cdd2bf6ed590.png)
 
