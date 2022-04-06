@@ -12,9 +12,9 @@ By viewing the heapsize used by the website at 3 given times, before testing, af
 <h1>Steps to get the project running</h1>
 
 1. To get the python script running make sure you install the correct version of web drivers. The web drivers that are used are chromedriver, geckodriver, and        msedgedriver. For chromedriver, make sure the version is compatible with your Google Chrome version. In order to find the compatible version of the drivers, go to:
-  https://chromedriver.chromium.org/downloads \n
-  https://github.com/mozilla/geckodriver/releases \n
-  https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/ \n
+  https://chromedriver.chromium.org/downloads </br>
+  https://github.com/mozilla/geckodriver/releases </br>
+  https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/ </br>
 2. Unzip the web drivers
 3. Copy the exe web driver files into ICT2206_abcd1234_Assignment1
 4. Open up visual studio code with the file MemLeakPage
