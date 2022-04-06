@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <title>
+        Leaky Browser
+    </title>
+</head>
+<h1>This page was made in order to test out browser leaks run it at your own risk</h1>
+
+<p>Click the button to display an alert box.</p>
+
+<button onclick="InsertDomElems()" id="CreateLeak">Add elements to DOM</button>
+<button onclick="RemoveDOMElems()" id="RemoveDOMElems">Remove the DOM elements in LIST!!</button>
+<button onclick="SetArrToZero()" id="SetArrToZero">Set Array back to 0</button>
+
+<div id="container" class="container"></div>
+
+<script>
+
+const leakyList = [];
+const container = document.getElementById("container");
+const WS = new WeakSet();
+
+
+function InsertDomElems() 
+{
+  for(let i= 0; i < 500; i++)
+  {
+    //Make a unique id for all pingu images
+    const newElement = document.createElement('img');
+    newElement.src = 'pingu.jpg';
+    newElement.id = "leakElem" + i;
+    leakyList.push(newElement);
+    container.appendChild(newElement);
+    WS.add(newElement)
+  }
+  
+}
+function RemoveDOMElems()
+{
+    leakyList.forEach(element => element.remove());
+}
+
+function SetArrToZero()
+{
+    leakyList.forEach(element => element.remove());
+    leakyList.length = 0;
+    
+}
+
+function CheckForGC()
+{
+   
+    var numOfObjects = 0;
+    if (leakyList.length > 0)
+    {
+        for(let i = 0; i < leakyList.length; i++)
+        {
+            var testBool = WS.has(leakyList[i]);
+            if(testBool === true)
+            {
+                numOfObjects++;
+            }
+        }
+        return numOfObjects;
+    }
+    else{
+        return numOfObjects;
+    }
+    
+}
+
+
+
+</script>
+
+</body>
+</html>
