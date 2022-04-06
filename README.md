@@ -7,4 +7,4 @@ is collected by JavaScript's Garbage Collector
 
 By viewing the heapsize used by the website at 3 given times, before testing, after testing and 30 seconds after testing, the heap size on each browser between the 3 timings can be compared.
 
-#Steps to get the project running
+<h1>Steps to get the project running</h1>
