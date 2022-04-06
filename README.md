@@ -24,6 +24,21 @@ By viewing the heapsize used by the website at 3 given times, before testing, af
 
 6. Open the file ICT2206_abcd1234_Assignment1 with PyCharm
 7. Install all the modules, in this code selenium, pyautogui and time are used
-8. Finally run the code
+8. Finally run the Python code on PyCharm
 
-<h2>Note</h2>
+![image](https://user-images.githubusercontent.com/73848081/161986741-99e1d950-37d0-41f9-8bf4-0a3902d63f89.png)
+
+<h2>Notes</h2>
+- Mozilla Firefox analyzer will only show the Heap size used by the testing website and not the number of image nodes to see if they were garbage collected
+- In order to see number of nodes in Firefox, call the function CheckForGC() in the console
+
+![image](https://user-images.githubusercontent.com/73848081/161986532-4691b0d4-10af-4d86-a056-cdd2bf6ed590.png)
+
+- When the Mozilla Firefox analysis is happening, it will download 3 HTML files just press enter when the name of the file is changed these HTML file are used to get the current Heap size used by the testing website
+![image](https://user-images.githubusercontent.com/73848081/161987165-21281a67-98f2-41ef-9b09-898b9c8d0380.png)
+
+
+
+
+
+
